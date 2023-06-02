@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country search app</title>
+  </head>
+
+  <body class="body_country">
+    <div class="wrapper">
+      <header>Country app</header>
+      <button class="theme-button" type="button">Сменить цвет темы</button>
+      <span class="country">
+        Country:
+        <form>
+          <input
+            type="search"
+            name="text"
+            class="country_search"
+            contenteditable="true"
+          />
+          <input class="button_country" type="submit" value="Найти" />
+        </form>
+      </span>
+      <span class="Region">
+        Region:
+        <form>
+          <input
+            type="search"
+            class="region_search"
+            name="text"
+            contenteditable="true"
+          />
+          <input type="submit" class="button_region" value="Найти" />
+        </form>
+      </span>
+      <div class="countryContainer">
+        <div id="loader"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>   
+  </body>
+</html>

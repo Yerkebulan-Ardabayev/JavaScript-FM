@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <title>Cuisine of Qazaqstan</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="main_title" id="top">
+        <h1 class="main_title_text">Cuisine of Qazaqstan</h1>
+      </div>
+      <div class="main_menu">
+        <ul class="menu">
+          <li class="list all" data-filter="all"><a href="#">all</a></li>
+          <li class="list breakfast" data-filter="breakfast"><a href="#">breakfast</a></li>
+          <li class="list dinner" data-filter="dinner"><a href="#"> dinner</a></li>
+          <li class="list beverages" data-filter="beverages"><a href="#">beverages</a></li>
+          <li class="list cooking" data-filter="cooking"><a href="#">cooking</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="main_cards">
+        <div class="card" data-category="dinner">
+          <div class="card_img_wrapper">
+            <img
+              src="https://pirogi.kz/wp-content/uploads/2015/12/%D0%A8%D1%83%D0%B6%D1%83%D0%BA-%D0%BE%D1%82%D0%B2%D0%B0%D1%80%D0%BD%D0%BE%D0%B9-100-%D0%B3%D1%80.-650-%D1%82%D0%B3.jpg"
+              alt="shuzhuk_img" class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">shuzhuk</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Казахская национальная колбаса из упитанной конины, начиняемая
+              в тонкие кишки, которая предварительно выдерживается в
+              посолочной смеси из соли, сахара и чеснока трое-четверо суток.
+              <br />
+              Таким образом, шужук — это одна из форм консервирования и
+              сохранения запасов мяса, применяемая испокон веков казахской
+              кухней.
+            </p>
+          </div>
+        </div>
+        <div class="card" data-category="beverages">
+          <div class="card_img_wrapper">
+            <img src="https://www.lada.kz/uploads/photos/2020-07/1595239256.36.04.jpeg" alt="shubat_img"
+              class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">shubat</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Шубат (или чал) (туркм. çal, узб. chal, каз. шұбат, қымыран) — кисломолочный
+              напиток из верблюжьего молока. Традиционный
+              напиток казахов и узбеков. У туркменов имеется аналогичный напиток под названием чал. В Казахстане напиток
+              употребляется летом и называется шубат. По сравнению с кумысом шубат имеет более высокую жирность (до 8
+              %).
+              Из-за
+              требований к сохранности почти не экспортируется.</p>
+          </div>
+        </div>
+        <div class="card" data-category="beverages">
+          <div class="card_img_wrapper">
+            <img src="https://static.caravan.kz/image/landscape/420/566208.jpg" alt="kumys_img" class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">kumys</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Кумы́с (от тюрк. qïmïz) — кисломолочный напиток, изготавливаемый обычно из
+              молока
+              кобылы, получается в результате
+              молочнокислого и спиртового брожения при помощи болгарской и ацидофильной молочнокислых палочек и дрожжей.
+              Напиток
+              пенный, беловатого цвета, вкус — кисловато-сладкий.</p>
+          </div>
+        </div>
+        <div class="card" data-category="breakfast">
+          <div class="card_img_wrapper">
+            <img src="https://img.povar.ru/main/23/2e/d7/47/balkaimak-456085.JPG" alt="balkaimak_img" class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">balkaimak</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Балкаймак — традиционное блюдо казахской кухни. В переводе на
+              русский язык, название означает "медовая сметана".Этот сладкий
+              крем, или соус подают к оладьям, блинчикам. Сделать балкаймак
+              совсем не сложно, главное чтобы исходные продукты - сметана и
+              сливки были вкусными и свежими.</p>
+          </div>
+        </div>
+        <div class="card" data-category="cooking">
+          <div class="card_img_wrapper">
+            <img
+              src="https://img-global.cpcdn.com/recipes/95f16c3ecb580ae6/680x482cq70/kazakhskii-diesiert-zhient-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%BE%D0%B5-%D1%84%D0%BE%D1%82%D0%BE-%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D0%B0.jpg"
+              alt="zhent_img" class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">zhent</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Жент (каз. жент), коспа́ (каз. қоспа) или йент (башк. йент) —
+              национальное казахское блюдо, региональное блюдо у башкир,
+              проживающих в бассейне реки Сакмары.
+              Жент является казахским национальным праздничным блюдом,
+              изготавливаемым из пшенной крупы (жареной), с добавлением
+              сушёного толчёного творога, топлёного масла, сахара, мёда,
+              изюма, орехов и других ингредиентов.</p>
+          </div>
+        </div>
+        <div class="card" data-category="dinner">
+          <div class="card_img_wrapper">
+            <img src="https://www.gastronom.ru/binfiles/images/20141116/bf4883bf.jpg" alt="kurt_img" class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">kurt</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Курт — тюркский, персидский, а также монгольский сухой
+              кисломолочный продукт из сушёной сузьмы.
+              Слово курут происходит от тюркского прилагательного кыры, коро,
+              или куру, что означает «сухой», так же, как катык происходит от
+              прилагательного каты, у башкир слово катык происходит от глагола
+              катыу (ҡатыу — заправлять, добавлять что-то в жидкую массу.
+              Солёный, сушёный, в виде шариков или цилиндриков, обжатых в
+              ладони и иногда сохраняющих следы обжатия.</p>
+          </div>
+        </div>
+        <div class="card" data-category="cooking">
+          <div class="card_img_wrapper">
+            <img src="https://img.povar.ru/main/e3/de/cd/c5/chak-chak-33593.jpg" alt="chuck_chuck_img" class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">chuck chuck</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Чак-Чак – это лакомство из жареных во фритюре кусочков пресного
+              теста, которые потом заливаются медовым сиропом.</p>
+          </div>
+        </div>
+        <div class="card" data-category="cooking">
+          <div class="card_img_wrapper">
+            <img src="https://i.ytimg.com/vi/S8GgGVcxfMQ/maxresdefault.jpg" alt="kuymak_img" class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">kuymak</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Куймак - национальное турецкое блюдо, несладкие и очень
+              аппетитные оладьи, которые прекрасно подойдут для завтрака или
+              перекуса. Оладушки можно подавать к столу с растопленным
+              сливочным маслом, сметаной или любым другим соусом.</p>
+          </div>
+        </div>
+        <div class="card" data-category="breakfast">
+          <div class="card_img_wrapper">
+            <img
+              src="https://static.1000.menu/img/content-v2/81/d6/17132/kazaxskie-baursaki-na-kefire_1592987900_9_max.jpg"
+              alt="baursaki_img" class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">baursak</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Баурса́к — традиционное мучное изделие алтайцев, ногайцев,
+              хакасов, башкир, бурятов, донских казаков, казахов, калмыков,
+              киргизов, монголов, таджиков, татар, тувинцев, туркмен, узбеков,
+              кумыков и уйгуров.Как правило, готовится из пресного или
+              дрожжевого теста в виде небольших пончиков (ромбовидной или
+              круглой формы), изготовляемых путём жарки во фритюре в казане.</p>
+          </div>
+        </div>
+        <div class="card" data-category="dinner">
+          <div class="card_img_wrapper">
+            <img
+              src="https://cdn.lifehacker.ru/wp-content/uploads/2018/07/shutterstock_1937651824_1650492351-scaled-e1650492384721-630x315.jpeg"
+              alt="lagman_img" class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">lagman</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Лагман готовится из мяса (преимущественно баранины или говядины), овощей и
+              тянутой длинной лапши. Лапшу тянут двумя
+              способами: раскручивая кусок теста наподобие детской скакалки, вытягивают его в моток лапши или раскатывая
+              между
+              ладонями и вытягивая. При большом количестве бульона лагман похож на суп, при других способах
+              приготовления — как лапша
+              с подливой и сложной начинкой..
+            </p>
+          </div>
+        </div>
+        <div class="card" data-category="dinner">
+          <div class="card_img_wrapper">
+            <img src="https://vkys.info/uploads/posts/2018-10/1538511035_img_9804.jpg" alt="manti_with_pumpkin_img"
+              class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">manti with pumpkin</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Манты с тыквой по популярности не уступают мантам с мясом. А что
+              удивляться – сочная сладковатая мякоть тыквы с топленым маслом и
+              пряностями понравится даже убежденным мясоедам.</p>
+          </div>
+        </div>
+        <div class="card" data-category="dinner">
+          <div class="card_img_wrapper">
+            <img src="https://kokmatroskin.ru/assets/images/kok/tostik.jpg" alt="toast_img" class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">toastic</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Растолочь лук, чеснок, соль и растереть до кашицеобразного
+              состояния. Обрезать мясо вместе со слоем жира с бараньей
+              грудинки и нарезать вдоль ребрышек двумя-тремя большими кусками
+              по десять сантиметров шириной, после чего каждый из них
+              нанизать на вертел и обжарить, как шашлык на мангале (углях).
+              Когда мясо будет почти полностью готово тостик снять с
+              вертела, натереть луково-чесночной кашицей, снова надеть и
+              обжарить еще две-три минуты.</p>
+          </div>
+        </div>
+        <div class="card" data-category="breakfast">
+          <div class="card_img_wrapper">
+            <img
+              src="https://img-global.cpcdn.com/recipes/b4faca6a78a155c7/680x482cq70/kuyrdak-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%BE%D0%B5-%D1%84%D0%BE%D1%82%D0%BE-%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D0%B0.jpg"
+              alt="kuyrdak_img" class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">kuyrdak</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Куырдак — это род жаркого, которое присутствует во всех кухнях
+              стран Центральной Азии. Его название происходит от слова
+              «куыру», что означает ‘жарка’. Куырдак не тушат долго, напротив,
+              его готовят, когда необходимо быстро накормить семью
+              или внезапно нагрянувших гостей. В классический казахский рецепт
+              из мясных продуктов входит исключительно ливер, а из
+              овощей — только лук.</p>
+          </div>
+        </div>
+        <div class="card" data-category="dinner">
+          <div class="card_img_wrapper">
+            <img src="https://i.ytimg.com/vi/VN6GUBTk3nM/maxresdefault.jpg" alt="meat_on_kazakh_img" class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">meat on kazakh</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Мясо по-казахски - сытное блюдо, которое включает в себя
+              отварное мясо с наваристым бульоном, тонкое отваренное тесто и
+              лук. Готовится оно преимущественно из баранины или конины, но в
+              нашей кухне прижился больше всего вариант с говядиной.
+              Самое сложное в приготовлении - сварить наваристый бульон и
+              приготовить простые лепёшки из теста, похожего на
+              пельменное.</p>
+          </div>
+        </div>
+        <div class="card" data-category="dinner">
+          <div class="card_img_wrapper">
+            <img
+              src="https://img-global.cpcdn.com/recipes/7729d9ce1afeef7e/680x482cq70/ryba-po-kazakhski-nastoiashchieie-obiedieniekoktal-iest-zhie-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%BE%D0%B5-%D1%84%D0%BE%D1%82%D0%BE-%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D0%B0.jpg"
+              class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">koktal</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Коктал - вкусное рыбное блюдо казахской кухни. Готовят его в
+              специальном приспособлении - коктальнице, чем-то
+              похожей на мангал, только сверху с крышкой и работает она на
+              газовом баллоне. Рыба, приготовленная таким способом,
+              получается очень нежной, ароматной и невероятно вкусной.</p>
+          </div>
+        </div>
+        <div class="card" data-category="dinner">
+          <div class="card_img_wrapper">
+            <img src="https://www.povarenok.ru/data/cache/2016sep/28/07/1723046_77666-710x550x.jpg"
+              alt="kespe_with_meat_img" class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">KESPE WITH MEAT</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Кеспе - это казахское блюдо, с казахского переводится как
+              бульон. Этот суп пришёл из далёкой кочевой жизни, он хорошо
+              подкрепляет силы и очень питательный. А ещё есть одна
+              особенность: лапшу в суп готовят сами.
+              Бульон для супа готовят на конине, говядине или верблюжатине.
+              Бульон должен быть наваристым, мясо - жирным и обязательно
+              на кости, или добавить косточки отдельно.</p>
+          </div>
+        </div>
+        <div class="card" data-category="dinner">
+          <div class="card_img_wrapper">
+            <img src="https://eltourism.kz/common/baur/sd(3).jpg" alt="sorpa_in_kazakhstan_img" class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">sorpa</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Подготовленное мясо кладут в кастрюлю, заливают крутым кипятком
+              и варят на медленном огне до готовности, около 1,5 -2
+              часов. После закипания с бульона необходимо снять пену и излишки
+              жира. Соль добавляют за 15 минут до приготовления
+              Сорпа.
+              Бульон обязательно процеживают, наливают в касы, добавляют мясо
+              и подают баурсаки.</p>
+          </div>
+        </div>
+        <div class="card" data-category="dinner">
+          <div class="card_img_wrapper">
+            <img
+              src="https://zor.store/images/detailed/9/%D0%A0%D1%8B%D0%B1%D0%BD%D0%BE%D0%B5_%D0%B0%D1%81%D1%81%D0%BE%D1%80%D1%82%D0%B8_qu84-mr.jpg"
+              alt="fish_assorti_issyk_img" class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">FISH ASSORTED "ISSYK"</h5>
+              <h6 class="card_price">6000 tenge</h6>
+            </div>
+            <p class="card_description">Осетрину или севрюгу, или белугу и лосося отваривают, нарезают
+              тонкими ломтиками и укладывают на блюдо. Кильки обжаривают
+              целиком без головы, сворачивают колечками и укладывают на
+              кружочки вареного яйца. <br />Икра кладется небольшой горкой или
+              намазывается на тонкий кусочек батона с маслом. Все украшается
+              свежей зеленью.</p>
+          </div>
+        </div>
+        <div class="card" data-category="cooking">
+          <div class="card_img_wrapper">
+            <img src="https://cookyt.pro/uploads/youtube/parse/1631106112_Y1515d.jpg" alt="tandoor_samsa_img"
+              class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">tandoor samsa</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Что такое тандыр? - Это такая большая печь в форме кувшина. Она
+              изготавливается из чистой шамотной глины. Поэтому в ней часто
+              готовят блюда из мяса, рыбы, овощей и тому подобное.блюдо. Самса
+              - популярное блюдо в
+              Южной, Юго-Восточной, Центральной и Юго-Западной Азии, на
+              Аравийском полуострове, в Средиземноморье, Северной и Южной
+              Африке. Имеется множество вариаций приготовления этого блюда.
+              Начинкой для самсы может служить приправленное луком и специями
+              мелко нарезанное мясо, горох, чечевица, картофель и другие овощи</p>
+          </div>
+        </div>
+        <div class="card" data-category="dinner">
+          <div class="card_img_wrapper">
+            <img src="https://e2.edimdoma.ru/data/recipes/0002/8274/28274-ed4_wide.jpg?1468716123" alt="orama_nan_img"
+              class="card_img">
+          </div>
+          <div class="card_description_wrapper">
+            <div class="card_title_price">
+              <h5 class="card_title">orama nan</h5>
+              <h6 class="card_price">5000 tenge</h6>
+            </div>
+            <p class="card_description">Кухня в Казахстане, помимо чисто национальных блюд, состоит из
+              огромного количества блюд других народов.
+
+              Жута-нан это блюдо дунганской кухни.
+
+              Естественно каждое попавшее к нам блюдо трансформируется с
+              учетом вкусов и пристрастий народа. Казахи мясоеды, и Жута нан
+              преобразовался в Орама (или Орама нан).
+
+              В оригинальном рецепте в тонкое тесто заворачивается начинка,
+              состоящая из моркови с луком. Так как, ведь дунгане овощеводы. А
+              казахи издревле кочевники скотоводы, поэтому в Орама входит
+              обязательно мясо.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  </main>
+  </div>
+  <div class="top">
+    <span class="top_cuisine">
+      <a href="#top">
+        Наверх☝
+      </a>
+    </span>
+  </div>
+  <script src="./javascript.js"></script>
+</body>
+
+</html>

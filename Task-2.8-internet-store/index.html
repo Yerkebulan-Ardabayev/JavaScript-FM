@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script
+      src="https://kit.fontawesome.com/3c02036105.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="./fonts/obective/Objective_Woff2/Objective-Regular.woff2"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internet Store</title>
+  </head>
+
+  <body class="body_shop">
+    <div class="wrapper">
+      <button class="theme-button" type="button">
+        <i
+          class="fa-solid fa-moon fa-flip"
+          style="--fa-animation-duration: 3s"
+        ></i>
+      </button>
+      <div class="naviget">
+        <div class="title_logo">
+          <h2 class="title_logo_h2">very big store</h2>
+          <span class="title_span"
+            ><i
+              class="fa fa-smile-o fa-flip"
+              style="--fa-animation-duration: 3s"
+            ></i
+          ></span>
+        </div>
+        <div class="menu">
+          <div class="home">
+            <a class="home_link" href="index.html">Home</a>
+          </div>
+          <div class="about">
+            <a href="about.html">About</a>
+          </div>
+          <div class="contact">
+            <a href="contact.html">Contact Us</a>
+          </div>
+          <div class="basket" id="trigger">
+            <i style="--fa-animation-duration: 3s" class="fa badge">&#xf07a;</i>
+          </div>
+          <div class="modalBackground">
+            <div class="modalActive">
+              <div class="modalClose">
+                <i class="fa fa-window-close" aria-hidden="true"></i>
+              </div>
+              <div class="btn">
+                <button type="submit" id="checkout">Checkout</button>
+                <button type="submit" id="clear_cart">Empty trash</button>
+              </div>
+              <div class="modalWindow"></div>
+              <div class="total_price">
+                <p class="total">Total:</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="product">
+        <form>
+          <input
+            type="search"
+            name="text"
+            class="product_search"
+            contenteditable="true"
+            id="n1"
+          />
+          <input class="button_product_item" type="submit" value="Найти" />
+        </form>
+      </span>
+      <div class="productsContainer">
+        <div id="loader"></div>
+      </div>
+      <div class="pagination-section">
+        <ul class="pagination">
+          <li class="page-item prev">
+            <a class="page-link" href="#">Previous</a>
+          </li>
+          <li class="page-item next"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

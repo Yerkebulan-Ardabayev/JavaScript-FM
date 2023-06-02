@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Account with validation</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="wrapper_blok">
+          <div class="title">
+            <h2>Create account</h2>
+          </div>
+          <div class="main_info">
+            <form action="#">
+              <div class="fname_lname">
+                <div class="fname">
+                  <label for="fname">First Name*</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="firstname"
+                    placeholder="Enter your first name..."
+                    minlength="3"
+                    pattern="[а-яА-ЯёЁa-zA-Z]*"
+                    required
+                  />
+                  <span class="error"></span>
+                </div>
+
+                <div class="lname">
+                  <label for="lname">Last Name</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lastname"
+                    placeholder="Enter your last name..."
+                  />
+                </div>
+              </div>
+
+              <div class="email">
+                <label class="email_label" for="email_label">Email*</label>
+                <input
+                  id="email_label"
+                  class="email_input"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email..."
+                  required
+                />
+                <span id="error" class="error"></span>
+              </div>
+
+              <div class="all_password">
+                <div class="password">
+                  <label for="password">Password*</label>
+                  <input
+                    id="password"
+                    class="password_1"
+                    type="password"
+                    name="pass"
+                    placeholder="Enter your password..."
+                    required
+                    minlength="6"
+                  />
+                  <span class="error"></span>
+                </div>
+                <div class="confirm_password">
+                  <label for="confirm_password"> Confirm Password*</label>
+                  <input
+                    id="confirm_password"
+                    class="password_2"
+                    type="password"
+                    name="pass"
+                    placeholder="Enter your password again..."
+                    required
+                    minlength="6"
+                  />
+                  <span class="error"></span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="second_info">
+            <div class="checkbox">
+              <div class="gender">
+                <form action="#" class="gender_form" method="post">
+                  <h4 class="gender_h4">Gender</h4>
+                  <div class="checkbox_gender">
+                    <div class="checkbox_gender_1">
+                      <input
+                        class="checkbox_1"
+                        type="radio"
+                        name="gender"
+                        value="male "
+                        id="gender1"
+                      />
+                    </div>
+                    <div>
+                      <label class="checkbox_2" for="gender1"> Male</label>
+                    </div>
+                    <div class="checkbox_gender_2">
+                      <input
+                        class="checkbox_3"
+                        type="radio"
+                        name="gender"
+                        value="female"
+                        id="gender2"
+                      />
+                    </div>
+                    <div>
+                      <label class="checkbox_4" for="gender2"> Female</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="hobbies">
+                <form action="#" class="hobbies_form" method="post">
+                  <h4 class="hobbies_h4">Hobbies</h4>
+                  <div class="hobbies_q">
+                    <div class="checkbox_6">
+                      <input
+                        type="checkbox"
+                        name="sports"
+                        value="hobbies"
+                        id="music"
+                      />
+                    </div>
+                    <div class="checkbox_5">
+                      <label for="music"> Music</label>
+                    </div>
+                    <div class="checkbox_8">
+                      <input
+                        type="checkbox"
+                        name="travel"
+                        value="hobbies"
+                        id="sports"
+                      />
+                    </div>
+                    <div class="checkbox_7">
+                      <label for="sports"> Sports</label>
+                    </div>
+                    <div class="checkbox_9">
+                      <input
+                        type="checkbox"
+                        name="travel"
+                        value="hobbies"
+                        id="travel"
+                      />
+                    </div>
+                    <div class="checkbox_2">
+                      <label for="travel"> Travel</label>
+                    </div>
+                    <div class="checkbox_9">
+                      <input
+                        type="checkbox"
+                        name="Movies"
+                        value="hobbies"
+                        id="movies"
+                      />
+                    </div>
+                    <div class="checkbox_10">
+                      <label for="movies"> Movies</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="third_info">
+            <div class="employed_form">
+              <label for="employed">Source of Income</label>
+              <select id="employed" name="Employed">
+                <option value="australia">Employed1</option>
+                <option value="canada">Employed2</option>
+                <option value="usa">Employed3</option>
+              </select>
+            </div>
+            <div class="range_form">
+              <label for="income">Income</label>
+              <input
+                class="range_slider"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                id="myRange"
+              />
+            </div>
+            <div class="notrange">
+              <div class="income_20K">
+                <span id="income_dynamic"> </span>
+              </div>
+            </div>
+          </div>
+          <div class="files_age">
+            <div class="file">
+              <label style="padding-left: 6px" for="file"
+                >Upload Profile Pictures
+              </label>
+              <input type="file" name="file" id="files" />
+            </div>
+            <div class="age">
+              <label for="age">Age</label>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="bio_wrap">
+            <div class="bio">
+              <label for="subject">Bio</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 150px; padding: 14px; border-radius: 7px"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="submit">
+          <button id="create" class="create">Create</button>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="./script.js"></script> -->
+    <script src="./validatorClass.js"></script>
+  </body>
+</html>

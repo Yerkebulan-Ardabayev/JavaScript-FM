@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+body {
+  margin-top: 50px;
+}
+
+input {
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+:root {
+  --primary: aqua;
+  --greyFont: rgb(206, 184, 184);
+  --borderFont: rgb(157, 148, 148);
+}
+
+.container {
+  width: 900px;
+  padding: 50px;
+  border-radius: 8px;
+  margin: 0 auto;
+  background-color: var(--primary);
+}
+
+.wrapper {
+  width: 800px;
+  border-radius: 8px;
+  margin: 0 auto;
+  background-color: var(--greyFont);
+}
+
+.wrapper_blok {
+  width: 100%;
+  border-bottom: 3px solid var(--borderFont);
+}
+
+.title {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 3px solid var(--borderFont);
+  margin-bottom: 20px;
+}
+
+.fname_lname {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.fname {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 30%;
+}
+
+.lname {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.email {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.email_label {
+  margin-left: 108px;
+}
+
+.email_input {
+  margin: 0 auto;
+  width: 73%;
+}
+
+.all_password {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.password,
+.confirm_password {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 30%;
+}
+
+.second_info {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.checkbox_gender_1 {
+  padding-left: 19px;
+}
+
+.checkbox_gender_2 {
+  padding-left: 6px;
+  padding-right: 3px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.gender_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.hobbies_form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.gender_h4 {
+  padding-left: 19px;
+  padding-bottom: 4px;
+}
+
+.checkbox_gender {
+  display: flex;
+}
+
+.hobbies_q {
+  display: flex;
+  padding-top: 2px;
+}
+
+.checkbox_6 {
+  display: flex;
+  padding-left: 41px;
+}
+
+.checkbox_5,
+.checkbox_7,
+.checkbox_2,
+.checkbox_10 {
+  display: flex;
+  padding-left: 2px;
+}
+
+.checkbox_8,
+.checkbox_9 {
+  display: flex;
+  padding: 0 2px 0 2px;
+}
+
+.hobbies_h4 {
+  padding-left: 40px;
+}
+
+.checkbox_1 {
+  padding-left: 6px;
+}
+
+.checkbox_2 {
+  padding-left: 6px;
+}
+
+.third_info {
+  display: flex;
+  width: 900px;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.employed_form {
+  display: flex;
+  padding-left: 101px;
+  flex-direction: column;
+}
+
+.notrange {
+  width: 32%;
+}
+
+.range_form {
+  display: flex;
+  margin-left: 211px;
+  flex-direction: column;
+}
+
+.income_20K {
+  margin-right: 245px;
+  padding: 10px;
+  background-color: blue;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.files_age {
+  display: flex;
+  width: 900px;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.file {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-right: 75px;
+}
+
+.age {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  margin-right: 198px;
+}
+
+.bio_wrap {
+  width: 600px;
+  margin-left: 104px;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.bio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.footer {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.submit {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: end;
+  width: 88%;
+}
+
+#error {
+  left: 108px;
+  width: 73%;
+}
+
+.create {
+  margin: 20px 0 20px 0;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  position: relative;
+  border: transparent;
+  background-color: rgba(36, 153, 108, 0.836);
+  color: azure;
+}
+
+.create:active {
+  bottom: -1px;
+}
+
+.error {
+  position: absolute;
+  width: 100%;
+  top: 44px;
+  padding: 0;
+  font-size: 86%;
+  color: white;
+  border-radius: 0 0 5px 5px;
+  background-color: #900;
+}

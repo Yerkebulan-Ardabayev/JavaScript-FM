@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 100px;
+  color: brown;
+  text-transform: uppercase;
+}
+
+button {
+  padding: 20px 35px;
+  position: relative;
+  outline: none;
+  border-style: none;
+  border-radius: 5px;
+  background-color: blue;
+  color: azure;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+button:active {
+  background-color: blueviolet;
+  padding: -2px;
+  outline: none;
+  border-style: none;
+}
+
+.buttonSortAgain{
+  margin-left: 15px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(87, 47, 47);
+}
+
+.container {
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  background-color: blanchedalmond;
+  height: 100vh;
+}
+
+.menu {
+  display: flex;
+  padding-left: 87px;
+  padding-bottom: 56px;
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
+}
+
+.menuList {
+  color: rgb(44, 61, 136);
+  font-size: 25px;
+  padding: 10px;
+  width: 21%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.submit {
+  display: flex;
+  margin: 30px 50px;
+}

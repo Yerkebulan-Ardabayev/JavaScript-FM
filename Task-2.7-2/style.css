@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
+
+* {
+	padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+	font-family: 'Roboto', sans-serif;
+}
+
+#container{
+    width: 600px;
+    margin: 0 auto;
+}
+h2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#results{ 
+    margin-top: 50px;
+    width: 800px;
+   
+}
+
+.countries {
+	list-style-type: none;
+    width: 550px;
+}
+
+.country-item {
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 10px;
+	margin: 10px 0;
+}
+
+.country-item:hover {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.country-flag {
+	width: 40%;
+}
+
+.country-name {
+	flex: 2;
+	font-weight: normal;
+	letter-spacing: .5px;
+	margin: 0 5px;
+	text-align: center;
+}
+
+.country-info {
+	border-left: 1px solid #aaa;
+	color: #777;
+	padding: 0 15px;
+	flex: 1;
+}
+
+.country-population {
+	font-weight: 300;
+	line-height: 24px;
+	margin: 0;
+	margin-bottom: 12px;
+}
+
+.country-population-text {
+	font-weight: 300;	
+	letter-spacing: 1px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+input {
+	font-family: 'Roboto', sans-serif;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	padding: 15px;
+	width: 550px;
+}
+

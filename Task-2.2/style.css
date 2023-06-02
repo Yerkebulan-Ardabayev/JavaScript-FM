@@ -1,0 +1,161 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(87, 47, 47);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(133, 157, 188, 0.953);
+}
+
+a:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  border-radius: 5px;
+  background-color: burlywood;
+  padding: 5px 15px;
+  position: relative;
+  outline: none;
+}
+
+li:active {
+  bottom: -1px;
+}
+
+header {
+  margin-bottom: 80px;
+  padding-top: 80px;
+}
+
+img {
+  width: 265px;
+  height: 200px;
+  border-radius: 10px;
+  border: 5px solid yellowgreen;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: blanchedalmond;
+  padding-bottom: 50px;
+  height: 100%;
+}
+
+.main_title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: burlywood;
+}
+
+.main_menu {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  width: 49%;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.main_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  padding-bottom: 25px;
+  width: 50%;
+}
+
+.card_img_wrapper {
+  display: flex;
+  padding: 15px 25px 20px 60px;
+}
+
+.card_title_price {
+  width: 79%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: baseline;
+  border-bottom: 0.5px solid rgba(194, 186, 45, 0.741);
+}
+
+.card_title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: rgb(107, 175, 175);
+}
+
+.card_price {
+  padding-bottom: 5px;
+  padding-top: 10px;
+  font-size: 20px;
+  text-transform: lowercase;
+  color: rgb(107, 175, 175);
+  font-weight: bolder;
+}
+
+.card_description_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 62%;
+}
+
+.card_description {
+  font-size: 14px;
+  width: 80%;
+  text-align: justify;
+  padding-top: 5px;
+}
+
+.card_img {
+  width: 267px;
+  height: 200px;
+}
+
+.top {
+  display: flex;
+  position: fixed;
+  left: 90%;
+  top: 91%;
+}
+
+.top_cuisine:hover {
+  background-color: rgba(176, 8, 8, 0.848);
+}
+
+.hide {
+  display: none;
+}
